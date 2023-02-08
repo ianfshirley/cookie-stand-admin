@@ -10,20 +10,20 @@ export default function Main() {
             <label for='location'>Location</label>
             <input name='location' id='location' placeholder='Barcelona' className='flex-auto ml-2 pl-1 border border-gray-700' />
           </div>
-          <div className='flex justify-evenly'>
+          <div className='flex flex-row justify-evenly'>
             <label>
               Min. Customers Per Hour
-              <input name='minimum_customers_per_hour' placeholder='2' className='block p-2 m-2 border border-gray-700' />
+              <input name='minimum_customers_per_hour' placeholder='2' className='block px-2 m-2 border border-gray-700' />
             </label>
             <label>
               Max. Customers Per Hour
-              <input name='maximum_customers_per_hour' placeholder='4' className='block p-2 m-2 border border-gray-700' />
+              <input name='maximum_customers_per_hour' placeholder='4' className='block px-2 m-2 border border-gray-700' />
             </label>
             <label>
               Avg. Cookies Per Sale
-              <input name='average_cookies_per_sale' placeholder='2.5' className='block p-2 m-2 border border-gray-700' />
+              <input name='average_cookies_per_sale' placeholder='2.5' className='block px-2 m-2 border border-gray-700' />
             </label>
-            <button className='px-4 py-1 bg-green-600 text-gray-50 border border-gray-700 rounded'>Create</button>
+            <button className='focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'>Create</button>
           </div>
         </form>
 
@@ -33,5 +33,5 @@ export default function Main() {
 }
 
 
-//  content-center
-// flex-auto p-2 m-2 border border-gray-700
+// button: px-4 bg-green-600 text-gray-50 border border-gray-700 rounded
+
