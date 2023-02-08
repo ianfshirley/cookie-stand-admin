@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Footer from './footer'
+import Header from './header'
+import Main from './main'
 
 
 export default function Home() {
@@ -12,14 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className='flex items-center justify-between p-4 bg-slate-500 text-gray-50'>
-        <h1>Cookie Stand</h1>
-        <p></p>
-      </header>
-      <main className=''>
-
-      </main>
-      <Footer></Footer>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }
