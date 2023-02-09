@@ -1,11 +1,9 @@
-import Link from 'next/link'
 
 
-export default function Main() {
+export default function CreateForm() {
   return (
     <>
-      <main>
-        <form className='w-3/4 p-2 mx-auto my-8 bg-emerald-300 rounded'>
+      <form className='w-3/4 p-2 mx-auto my-8 bg-emerald-300 rounded'>
           <h2 className='content-center text-center text-xl'>Create a Cookie Stand</h2>
           <div id='location_div' className='flex justify-evenly p-3 my-4' >
             <label for='location'>Location</label>
@@ -28,13 +26,6 @@ export default function Main() {
 '>Create</button>
           </div>
         </form>
-        <p className='text-center text-gray-500 font-medium'>Report Table Coming Soon...</p>
-      </main>
     </>
   )
 }
-
-
-
-
-// button: focus:outline-none text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:ring-emerald-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-emerald-500 dark:hover:bg-emerald-600 dark:focus:ring-emerald-700
