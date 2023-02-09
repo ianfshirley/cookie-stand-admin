@@ -1,4 +1,5 @@
 import {hours, hourlySales, locations}   from './data'
+import React from 'react'
 
 export default function ReportTable() {
   return (
@@ -20,28 +21,16 @@ export default function ReportTable() {
                       {hourlySales.map((hour, idx) => {
                         return <td key={idx}>{hour}</td>
                       })}
-                      <td>516</td>
+                      <td>{hourlySales.reduce((sum, value) => sum + value, 0)}</td>
                   </tr>
           })}
         </tbody>
         <tfoot>
           <tr>
             <td>Totals</td>
-            <td>376</td>
-            <td>333</td>
-            <td>303</td>
-            <td>357</td>
-            <td>421</td>
-            <td>313</td>
-            <td>375</td>
-            <td>336</td>
-            <td>378</td>
-            <td>386</td>
-            <td>317</td>
-            <td>378</td>
-            <td>291</td>
-            <td>365</td>
-            <td>4929</td>
+            {hours.map((hour, idx) => {
+              return <td key={idx}>{}</td>
+            })}
           </tr>
         </tfoot>
       </table>
