@@ -1,9 +1,17 @@
 import CookieStandAdmin from '../components/CookieStandAdmin'
+import LoginForm from '@/components/LoginForm';
 import Head from 'next/head'
-import Link from 'next/link'
+import { useAuth } from '../contexts/auth'
 
 
 export default function Home() {
+
+  const { user, login } = useAuth();
+
+  function loginHandler(username, password) {
+    ;
+  }
+
   return (
     <>
       <Head>
@@ -12,7 +20,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <CookieStandAdmin />
+
+      {user ?
+        <CookieStandAdmin />
+        :
+        <LoginForm onLogin={loginHandler}/>  
+      }
+
     </>
   )
 }
