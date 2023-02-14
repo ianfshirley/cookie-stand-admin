@@ -1,12 +1,12 @@
 import CookieStandAdmin from '../components/CookieStandAdmin'
 import LoginForm from '@/components/LoginForm';
 import Head from 'next/head'
-import Link from 'next/link'
+import { useAuth } from '../contexts/auth'
 
 
 export default function Home() {
 
-  const user = null;
+  const { user, login } = useAuth();
 
   function loginHandler(username, password) {
     ;
