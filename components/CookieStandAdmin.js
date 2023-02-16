@@ -1,18 +1,18 @@
-import Header from '../components/Header'
 import CreateForm from '../components/CreateForm'
-import ReportTable from '../components/ReportTable'
-import Footer from '../components/Footer'
+import CookieStandTable from './CookieStandTable'
+import useResource from '@/hooks/useResource'
 
 
-export default function CookieStandAdmin() {
+export default function CookieStandAdmin(props) {
+
+  const { resources, deleteResource } = useResource();
+
   return (
     <>
-      <Header />
       <main>
-        <CreateForm />
-        <ReportTable />
+        <CreateForm handleSubmit={props.handleSubmit}/>
+        <CookieStandTable cookieStands={resources || []} deleteCookieStand={deleteResource}/>
       </main>
-      <Footer />
     </>
   )
 }
