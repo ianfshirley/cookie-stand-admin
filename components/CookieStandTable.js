@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function CookieStandTable() {
   return (
-  //   props.cookieStands.length > 0 ? (
+  //   cookieStands.length > 0 ? (
       <>
       <table className="w-1/2 mx-auto my-4 border">
         <thead>

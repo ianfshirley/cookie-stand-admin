@@ -18,8 +18,8 @@ export function AuthProvider(props) {
     const [state, setState] = useState({
         tokens: null,
         user: null,
-        login,
-        logout,
+        login, // shorthand for login: login
+        logout, // shorthand for logout: logout
     });
 
     async function login(username, password) {
