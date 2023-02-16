@@ -1,6 +1,6 @@
 import Header from '../components/Header'
 import CreateForm from '../components/CreateForm'
-import ReportTable from '../components/ReportTable'
+import CookieStandTable from './CookieStandTable'
 import Footer from '../components/Footer'
 
 
@@ -10,7 +10,7 @@ export default function CookieStandAdmin() {
       <Header />
       <main>
         <CreateForm />
-        <ReportTable />
+        <CookieStandTable />
       </main>
       <Footer />
     </>

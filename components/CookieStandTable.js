@@ -1,7 +1,7 @@
 import { hours, hourlySales, locations } from './data'
 import React from 'react'
 
-export default function ReportTable() {
+export default function CookieStandTable() {
   return (
   //   props.cookieStands.length > 0 ? (
       <>
