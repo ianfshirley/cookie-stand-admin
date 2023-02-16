@@ -6,11 +6,7 @@ import { useAuth } from '../contexts/auth'
 
 export default function Home() {
 
-  const { user, login } = useAuth();
-
-  function loginHandler(username, password) {
-    ;
-  }
+  const { user, login, logout } = useAuth();
 
   return (
     <>
@@ -24,7 +20,7 @@ export default function Home() {
       {user ?
         <CookieStandAdmin />
         :
-        <LoginForm onLogin={loginHandler}/>  
+        <LoginForm onLogin={ login }/>  
       }
 
     </>
